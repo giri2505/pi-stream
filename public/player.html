@@ -1,0 +1,8 @@
+<video controls autoplay style="width:100%;height:100vh;">
+  <source id="src">
+</video>
+
+<script>
+const file = new URLSearchParams(location.search).get('file');
+document.getElementById('src').src = `/video?file=${file}`;
+</script>
